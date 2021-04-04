@@ -10,30 +10,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 
-const config = {
-  travelTypes: [
-    {
-      image: "/assets/cocktail.svg",
-      name: "vida noturna",
-    },
-    {
-      image: "/assets/surf.svg",
-      name: "praia",
-    },
-    {
-      image: "/assets/building.svg",
-      name: "moderno",
-    },
-    {
-      image: "/assets/museum.svg",
-      name: "clássico",
-    },
-    {
-      image: "/assets/earth.svg",
-      name: "e mais..",
-    },
-  ],
-};
+
 
 export default function Home() {
   const isWideVersion = useBreakpointValue({
