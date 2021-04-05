@@ -1,0 +1,124 @@
+{
+  "travel": [
+    {
+      "id": 1,
+      "name": "vida noturna",
+      "image": "/assets/cocktail.svg",
+      "flex": {
+        "base": "50%",
+        "lg": "auto"
+      }
+    },
+    {
+      "id": 2,
+      "name": "praia",
+      "image": "/assets/surf.svg",
+      "flex": {
+        "base": "50%",
+        "lg": "auto"
+      }
+    },
+    {
+      "id": 3,
+      "name": "moderno",
+      "image": "/assets/building.svg",
+      "flex": {
+        "base": "50%",
+        "lg": "auto"
+      }
+    },
+    {
+      "id": 4,
+      "name": "clássico",
+      "image": "/assets/museum.svg",
+      "flex": {
+        "base": "50%",
+        "lg": "auto"
+      }
+    },
+    {
+      "id": 5,
+      "name": "e mais..",
+      "image": "/assets/earth.svg",
+      "flex": {
+        "base": "100%",
+        "lg": "auto"
+      }
+    }
+  ],
+  "carousel": [
+    {
+      "id": 1,
+      "name": "Europa",
+      "image": "/assets/europe.jpg",
+      "coment": "O continente mais antigo"
+    },
+    {
+      "id": 2,
+      "name": "Africa",
+      "image": "/assets/africa.jpg",
+      "coment": "As mais belas savanas"
+    },
+    {
+      "id": 3,
+      "name": "Asia",
+      "image": "/assets/asia.jpg",
+      "coment": "Uma cultura cheia de riquesa milenar"
+    },
+    {
+      "id": 4,
+      "name": "America do norte",
+      "image": "/assets/american.jpg",
+      "coment": "A liberdade aqui é tudo"
+    },
+    {
+      "id": 5,
+      "name": "America do sul",
+      "image": "/assets/southamerican.jpg",
+      "coment": "Aqui você encontrar diversidade"
+    }
+  ],
+  "continents": [
+    {
+      "id": 1,
+      "banner": "/assets/contient/europe/europeBanner.jpg",
+      "name": "Europa",
+      "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "countrysAmmount": 50,
+      "languagesAmmount": 60,
+      "citysAmmount": 27,
+      "top10": [
+        {
+          "id": 1,
+          "city": "Londres",
+          "country": "Reio Unido",
+          "flag": "/assets/continent/ukFlag.png"
+        },
+        {
+          "id": 2,
+          "city": "Paris",
+          "country": "França",
+          "flag": "/assets/continent/fanceFlag.png"
+        },
+        {
+          "id": 3,
+          "city": "Roma",
+          "country": "Itália",
+          "flag": "/assets/continent/italyFlag.png"
+        },
+        {
+          "id": 4,
+          "city": "Praga",
+          "country": "República Theca",
+          "flag": "/assets/continent/thecaFlag.png"
+        },
+        {
+          "id": 5,
+          "city": "Amsterdã",
+          "country": "Holanda",
+          "flag": "/assets/continent/netherlandsFlag.png"
+        }
+      ]
+    }
+  ]
+}
