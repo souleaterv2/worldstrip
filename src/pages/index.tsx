@@ -1,16 +1,19 @@
 import Head from "next/head";
 import {
-  SimpleGrid,
   Stack,
+  Divider,
   Box,
   Img,
   Text,
   useBreakpointValue,
-  HStack,
   Flex,
 } from "@chakra-ui/react";
 
+import { Banner } from "../components/Banner";
+import { Carousel } from "../components/Carousel";
+import { TravelType } from "../components/TravelType";
 
+import { homeConfig } from "../config/home";
 
 export default function Home() {
   const isWideVersion = useBreakpointValue({
@@ -23,135 +26,56 @@ export default function Home() {
       <Head>
         <title> Home </title>
       </Head>
-      <Box width="100%" minWidth="100vh">
-        <Box width="100%" paddingY="6">
+      <Stack minWidth="100vh" marginY="6">
+        <Box paddingBottom="6">
           <Img marginX="auto" src="/assets/Logo.svg" alt="logo" />
         </Box>
-        <Flex
-          alignItems="center"
-          width="100%"
-          h="335px"
-          backgroundSize="cover"
-          backgroundImage="url('/assets/banner.jpg')"
-        >
+        <Banner isWideVersion={isWideVersion} />
+        <Box as="main" paddingX={{ base: "0", lg: "20" }}>
           <Flex
-            maxWidth={{ base: "100%", lg: "90%" }}
-            marginX="auto"
-            width="100%"
-            textAlign="left"
-            justifyContent={{
-              base: "center",
-              lg: "space-between",
-            }}
+            as="section"
+            justifyContent="space-between"
+            paddingY="12"
+            flexWrap="wrap"
+            paddingX='10'
           >
-            <Flex justifyContent="center" flexDirection="column">
-              <Box fontSize="2.25rem" fontWeight="500" color="text.500">
-                <Text>5 Continentes,</Text>
-                <Text>infinitas possibilidades.</Text>
-              </Box>
-              <Box fontSize="1.25rem" fontWeight="400" color="info.500">
-                <Text>Chegou a hora de tirar do papel a viagem que você</Text>
-                <Text>sempre sonhou.</Text>
-              </Box>
-            </Flex>
-            {isWideVersion && (
-              <Img src="/assets/Airplane.svg" alt="airplane" mb="-90px" />
-            )}
+            {homeConfig.travelTypeSection.map((travelItem) => (
+              <TravelType
+                key={travelItem.name}
+                image={travelItem.image}
+                name={travelItem.name}
+                isWideVersion={isWideVersion}
+                flexBasis={travelItem.flex}
+              />
+            ))}
           </Flex>
-        </Flex>
-        <Flex
-          justifyContent="space-between"
-          paddingY="12"
-          paddingX="16"
-          flexWrap="wrap"
-        >
-          <Box
-            marginY="2"
-            flexBasis={{
-              base: "50%",
-              lg: "auto",
-            }}
-          >
-            <Img
-              marginX="auto"
-              marginBottom="2"
-              src="/assets/cocktail.svg"
-              alt="vida noturna"
+          <Flex justifyContent="center">
+            <Divider
+              orientation="horizontal"
+              backgroundColor="darkText.500"
+              height="2px"
+              width="90px"
             />
-            <Text textAlign="center" fontWeight="600">
-              vida noturna
-            </Text>
-          </Box>
-          <Box
-            marginY="2"
-            flexBasis={{
-              base: "50%",
-              lg: "auto",
+          </Flex>
+          <Flex
+            as="section"
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
+            color="darkText.500"
+            fontWeight="500"
+            fontSize={{
+              base: "1.25rem",
+              lg: "2.25rem",
             }}
+            paddingY="10"
           >
-            <Img
-              marginX="auto"
-              marginBottom="2"
-              src="/assets/surf.svg"
-              alt="praia"
-            />
-            <Text textAlign="center" fontWeight="600">
-              praia
-            </Text>
-          </Box>
-          <Box
-            marginY="2"
-            flexBasis={{
-              base: "50%",
-              lg: "auto",
-            }}
-          >
-            <Img
-              marginX="auto"
-              marginBottom="2"
-              src="/assets/building.svg"
-              alt="moderno"
-            />
-            <Text textAlign="center" fontWeight="600">
-              moderno
-            </Text>
-          </Box>
-          <Box
-            marginY="2"
-            flexBasis={{
-              base: "50%",
-              lg: "auto",
-            }}
-          >
-            <Img
-              marginX="auto"
-              marginBottom="2"
-              src="/assets/museum.svg"
-              alt="clássico"
-            />
-            <Text textAlign="center" fontWeight="600">
-              clássico
-            </Text>
-          </Box>
-          <Box
-            marginY="2"
-            flexBasis={{
-              base: "100%",
-              lg: "auto",
-            }}
-          >
-            <Img
-              marginX="auto"
-              marginBottom="2"
-              src="/assets/earth.svg"
-              alt="e mais..."
-            />
-            <Text textAlign="center" fontWeight="600">
-              e mais...
-            </Text>
-          </Box>
-        </Flex>
-      </Box>
+            <Text>Vamos nessa ?</Text>
+            <Text>Então escolha seu continente</Text>
+          </Flex>
+          <Carousel carouselItens={homeConfig.carousel} />
+        </Box>
+      </Stack>
     </>
   );
 }
