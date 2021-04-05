@@ -1,17 +1,17 @@
-import { Flex, Box, Text, Img, Center } from "@chakra-ui/react";
+import { Flex, Box, Text, Img } from "@chakra-ui/react";
 
 interface BannerProps {
   isWideVersion: boolean;
 }
 
-export function Banner({ isWideVersion = false }:BannerProps) {
+export function Banner({ isWideVersion = true }: BannerProps) {
   return (
     <Flex
       width="100%"
       h="368px"
       backgroundSize="cover"
-      backgroundPosition='top'
-      backgroundRepeat='no-repeat'
+      backgroundPosition="top"
+      backgroundRepeat="no-repeat"
       backgroundImage="url('/assets/banner.jpg')"
     >
       <Flex

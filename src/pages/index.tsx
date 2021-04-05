@@ -27,7 +27,7 @@ export default function Home() {
         <title> Home </title>
       </Head>
       <Stack minWidth="100vh" marginY="6">
-        <Box paddingBottom="6">
+        <Box as='header' paddingBottom="6">
           <Img marginX="auto" src="/assets/Logo.svg" alt="logo" />
         </Box>
         <Banner isWideVersion={isWideVersion} />

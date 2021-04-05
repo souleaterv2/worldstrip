@@ -7,7 +7,7 @@ interface TravelType extends BoxProps {
 }
 
 export function TravelType({
-  isWideVersion = false,
+  isWideVersion = true,
   image,
   name,
   ...rest
