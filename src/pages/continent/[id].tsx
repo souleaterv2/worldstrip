@@ -122,7 +122,7 @@ export default function Continent({ continentData }: ContinentProps) {
             justifyItems="center"
             color="darkText.500"
             fontWeight="600"
-            flexWrap='wrap'
+            flexWrap="wrap"
             justifyContent="space-between"
             flexBasis={{
               base: "100%",
@@ -211,17 +211,30 @@ export default function Continent({ continentData }: ContinentProps) {
         <SimpleGrid minChildWidth="16rem" gap="6">
           {continentData.top10.map((item) => (
             <Box w="100%" height="17.5rem" key={item.id}>
-              <Img w="100%" src={item.img} alt={item.city} h="10.875rem" />
+              <Img
+                borderTopLeftRadius="10"
+                borderTopRightRadius="10"
+                w="100%"
+                src={item.img}
+                alt={item.city}
+                h="10.875rem"
+              />
               <Flex
                 padding="6"
                 justifyItems="center"
                 justifyContent="space-between"
                 border="1px solid #ffba08"
                 borderTop={0}
+                borderBottomRightRadius="10"
+                borderBottomLeftRadius="10"
               >
                 <Box>
-                  <Text fontWeight='600' fontSize='1.25rem' >{item.city}</Text>
-                  <Text fontWeight='500' fontSize='1rem'color='#999999' >{item.country}</Text>
+                  <Text fontWeight="600" fontSize="1.25rem">
+                    {item.city}
+                  </Text>
+                  <Text fontWeight="500" fontSize="1rem" color="#999999">
+                    {item.country}
+                  </Text>
                 </Box>
                 <Img
                   h="1.875rem"
@@ -249,7 +262,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { id } = params;
 
-  console.log(id);
 
   const continent = (await jsonSeverApi.get<Continent>(`/continents/${id}`))
     .data;

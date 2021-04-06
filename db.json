@@ -64,18 +64,6 @@
       "name": "Asia",
       "image": "/assets/asia.jpg",
       "coment": "Uma cultura cheia de riquesa milenar"
-    },
-    {
-      "id": 4,
-      "name": "America do norte",
-      "image": "/assets/american.jpg",
-      "coment": "A liberdade aqui é tudo"
-    },
-    {
-      "id": 5,
-      "name": "America do sul",
-      "image": "/assets/southamerican.jpg",
-      "coment": "Aqui você encontrar diversidade"
     }
   ],
   "continents": [
@@ -122,6 +110,84 @@
           "country": "Holanda",
           "img": "/assets/continent/europe/amestandam.jpg",
           "flag": "/assets/continent/europe/netherlandsFlag.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "banner": "/assets/continent/africa/africaBanner.jpg",
+      "name": "Africa",
+      "description": "A África é o terceiro continente mais extenso (depois da Ásia e da América) com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas (estimativa para 2005[1]), representando cerca de um sétimo da população mundial, e 54 países independentes. Tem se transformado na ultima década em uma continente cada vez mais católico.",
+      "countrysAmmount": 40,
+      "languagesAmmount": 30,
+      "citysAmmount": 57,
+      "top10": [
+        {
+          "id": 1,
+          "city": "Cairo",
+          "country": "Egito",
+          "img": "/assets/continent/africa/cairo.jpg",
+          "flag": "/assets/continent/africa/egitoFlag.jpg"
+        },
+        {
+          "id": 2,
+          "city": "Kinshara",
+          "country": "Rep. Democ. Congo",
+          "img": "/assets/continent/africa/kinshasa.jpg",
+          "flag": "/assets/continent/africa/congoFlag.png"
+        },
+        {
+          "id": 3,
+          "city": "Cidade do cabo",
+          "country": "África do Sul",
+          "img": "/assets/continent/africa/cabo.jpg",
+          "flag": "/assets/continent/africa/africaSulFlag.png"
+        },
+        {
+          "id": 4,
+          "city": "Luanda",
+          "country": "Angola",
+          "img": "/assets/continent/africa/luanda.jpg",
+          "flag": "/assets/continent/africa/angolaFlag.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "banner": "/assets/continent/asia/asiaBanner.jpg",
+      "name": "Asia",
+      "description": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial.",
+      "countrysAmmount": 49,
+      "languagesAmmount": 20,
+      "citysAmmount": 30,
+      "top10": [
+        {
+          "id": 1,
+          "city": "Bangkok",
+          "country": "Tailândia",
+          "img": "/assets/continent/asia/bangkok.jpg",
+          "flag": "/assets/continent/asia/thailandFlag.png"
+        },
+        {
+          "id": 2,
+          "city": "Tóquio",
+          "country": "Japão",
+          "img": "/assets/continent/asia/tokyo.jpg",
+          "flag": "/assets/continent/asia/japanFlag.png"
+        },
+        {
+          "id": 3,
+          "city": "Hong Kong",
+          "country": "China",
+          "img": "/assets/continent/asia/hongkong.jpg",
+          "flag": "/assets/continent/asia/chinaFlag.png"
+        },
+        {
+          "id": 4,
+          "city": "Dubai",
+          "country": "Emirados Árebes Unidos",
+          "img": "/assets/continent/asia/dubai.jpg",
+          "flag": "/assets/continent/asia/arabesFlag.png"
         }
       ]
     }
