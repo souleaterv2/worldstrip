@@ -54,7 +54,7 @@ export default function Home({ configHome }: HomeProps) {
         >
           {configHome.travelData.map((travelItem) => (
             <TravelType
-              key={travelItem.name}
+              key={travelItem.id}
               image={travelItem.image}
               name={travelItem.name}
               isWideVersion={isWideVersion}
@@ -98,7 +98,10 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
-      configHome: {},
+      configHome: {
+        travelData,
+        carouselData,
+      },
     },
   };
 };

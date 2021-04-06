@@ -81,7 +81,7 @@
   "continents": [
     {
       "id": 1,
-      "banner": "/assets/contient/europe/europeBanner.jpg",
+      "banner": "/assets/continent/europe/europeBanner.jpg",
       "name": "Europa",
       "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
       "countrysAmmount": 50,
@@ -92,31 +92,36 @@
           "id": 1,
           "city": "Londres",
           "country": "Reio Unido",
-          "flag": "/assets/continent/ukFlag.png"
+          "img": "/assets/continent/europe/london.jpg",
+          "flag": "/assets/continent/europe/ukFlag.png"
         },
         {
           "id": 2,
           "city": "Paris",
           "country": "França",
-          "flag": "/assets/continent/fanceFlag.png"
+          "img": "/assets/continent/europe/paris.jpg",
+          "flag": "/assets/continent/europe/fanceFlag.png"
         },
         {
           "id": 3,
           "city": "Roma",
           "country": "Itália",
-          "flag": "/assets/continent/italyFlag.png"
+          "img": "/assets/continent/europe/roma.jpg",
+          "flag": "/assets/continent/europe/italyFlag.png"
         },
         {
           "id": 4,
           "city": "Praga",
           "country": "República Theca",
-          "flag": "/assets/continent/thecaFlag.png"
+          "img": "/assets/continent/europe/praga.jpg",
+          "flag": "/assets/continent/europe/thecaFlag.png"
         },
         {
           "id": 5,
           "city": "Amsterdã",
           "country": "Holanda",
-          "flag": "/assets/continent/netherlandsFlag.png"
+          "img": "/assets/continent/europe/amestandam.jpg",
+          "flag": "/assets/continent/europe/netherlandsFlag.png"
         }
       ]
     }
